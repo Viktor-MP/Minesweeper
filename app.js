@@ -22,7 +22,7 @@ let innerNumber = 0
         div.id = count
         div.innerText = count-1
         div.onclick = () => fool(div.id-1)
-        div.style.userSelect = "none"
+        // div.style.userSelect = "none"
         if (bamb.includes(count)) {
             div.innerText = "BOOM"
         }
@@ -70,8 +70,9 @@ let innerNumber = 0
         // let sttrLeft = left.toString()
         // let sttrDownLeft = downLeft.toString()
 
-
+// debugger
          result =       (arr[right] === "BOOM" && strRight !== 1) ? innerNumber=innerNumber+1 : innerNumber=innerNumber;
+                        (arr[left] ==="BOOM " && strLeft !== 0)? innerNumber=innerNumber+1 : innerNumber=innerNumber;
                         (arr[left] === "BOOM" && strLeft !== 1 && strLeft !== 0) ? innerNumber=innerNumber+1 : innerNumber=innerNumber;
                         (arr[up] === "BOOM") ? innerNumber=innerNumber+1 : innerNumber=innerNumber;
                         (arr[down] === "BOOM") ? innerNumber=innerNumber+1 : innerNumber=innerNumber;
